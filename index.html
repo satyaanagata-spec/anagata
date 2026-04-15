@@ -3,7 +3,6 @@
 <head>
   <title>anagata</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400&family=Inter:wght@300&display=swap" rel="stylesheet">
 
   <style>
@@ -15,48 +14,71 @@
       justify-content: center;
       align-items: center;
       font-family: 'Inter', sans-serif;
-      overflow: hidden;
     }
 
     .container {
       text-align: center;
-      position: relative;
+      max-width: 650px;
+      padding: 20px;
     }
 
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 48px;
-      font-weight: 300;
-      letter-spacing: 6px;
-      color: #1a1a1a;
-      margin: 0;
+    /* 🔥 YOUR LOGO */
+    .logo {
+      width: 220px; /* perfect size for your logo */
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    .tagline {
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: #777;
+      margin-top: 10px;
       opacity: 0;
       animation: fadeIn 2s ease forwards;
     }
 
-    .subtle {
-      font-size: 12px;
-      letter-spacing: 3px;
-      color: #888;
-      margin-top: 15px;
+    .headline {
+      margin-top: 25px;
+      font-size: 14px;
+      letter-spacing: 2px;
+      color: #1a1a1a;
+      font-weight: 400;
+      opacity: 0;
+      animation: fadeIn 2.5s ease forwards;
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #8a8a8a;
+      line-height: 1.8;
+      letter-spacing: 0.5px;
       opacity: 0;
       animation: fadeIn 3s ease forwards;
     }
 
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
+    .coming {
+      margin-top: 30px;
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: #b5b5b5;
+      opacity: 0;
+      animation: fadeIn 3.5s ease forwards;
     }
 
-    /* soft grain overlay */
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
     body::after {
       content: "";
       position: absolute;
       width: 100%;
       height: 100%;
       background: url("https://grainy-gradients.vercel.app/noise.svg");
-      opacity: 0.08;
+      opacity: 0.05;
       pointer-events: none;
     }
   </style>
@@ -65,8 +87,27 @@
 <body>
 
   <div class="container">
-    <h1>ANAGATA</h1>
-    <div class="subtle">quietly becoming</div>
+
+    <!-- LOGO -->
+    <img src="logo.png" class="logo">
+
+    <div class="tagline">
+      quietly becoming
+    </div>
+
+    <div class="headline">
+      ESCAPE THE ORDINARY
+    </div>
+
+    <div class="description">
+      between flights and quiet moments —  
+      notes on travel, simplicity, and a life well curated
+    </div>
+
+    <div class="coming">
+      COMING SOON
+    </div>
+
   </div>
 
 </body>

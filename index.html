@@ -13,7 +13,6 @@
       --gold: #C6A96B;
       --cream: #F7F3EE;
       --text-soft: #5c6c79;
-      --line: rgba(15, 42, 68, 0.2);
     }
 
     * {
@@ -29,52 +28,48 @@
 
     /* HEADER */
     .header {
-      padding: 16px 40px 12px;
+      padding: 8px 40px 4px; /* 👈 very high */
       text-align: center;
     }
 
     .logo {
-      width: 500px;
-      max-width: 90%;
+      width: 420px; /* 👈 strong */
+      max-width: 92%;
       display: block;
-      margin: 0 auto 10px;
-      
+      margin: 0 auto 2px; /* 👈 tight */
     }
 
     /* MAIN */
     .main {
       text-align: center;
-      padding: 50px 20px 40px;
+      padding: 30px 20px 24px; /* 👈 pulled up */
     }
 
     .tagline {
-      font-size: 8px;
+      font-size: 10px;
       letter-spacing: 0.32em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 10px;
+      margin-bottom: 4px;
     }
 
     .headline {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(36px, 4.5vw, 48px);
-      line-height: 1;
+      font-size: clamp(26px, 3.2vw, 34px); /* 👈 smaller */
+      line-height: 1.05;
       margin: 0;
     }
 
-  
-    }
-
     .description {
-      max-width: 520px;
-      margin: 0 auto;
-      font-size: 14px;
-      line-height: 1.8;
+      max-width: 460px;
+      margin: 10px auto 0;
+      font-size: 13px;
+      line-height: 1.7;
       color: var(--text-soft);
     }
 
     .coming {
-      margin-top: 28px;
+      margin-top: 14px;
       font-size: 10px;
       letter-spacing: 0.32em;
       text-transform: uppercase;
@@ -84,7 +79,7 @@
     /* MOBILE */
     @media (max-width: 640px) {
       .header {
-        padding: 14px 20px 10px;
+        padding: 6px 20px 2px;
       }
 
       .logo {
@@ -92,15 +87,15 @@
       }
 
       .main {
-        padding: 40px 20px;
+        padding: 24px 16px;
       }
 
       .headline {
-        font-size: 32px;
+        font-size: 24px;
       }
 
       .description {
-        font-size: 13px;
+        font-size: 12.5px;
       }
     }
   </style>
@@ -110,7 +105,6 @@
   <!-- HEADER -->
   <div class="header">
     <img src="2.png" class="logo" alt="ANAGATA logo">
-    <div class="line"></div>
   </div>
 
   <!-- CONTENT -->
@@ -122,8 +116,6 @@
       Somewhere Between<br>
       Here and There
     </h1>
-
-    <div class="divider"></div>
 
     <p class="description">
       a quiet space for travel, lifestyle, everyday rituals, and simple living,

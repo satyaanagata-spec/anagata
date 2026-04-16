@@ -1,118 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ANAGATA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANAGATA</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <style>
-    :root {
-      --navy: #0F2A44;
-      --gold: #C6A96B;
-      --cream: #F7F3EE;
-      --text: #566775;
-    }
+body {
+  background: #F7F3EE;
+  color: #0F2A44;
+  font-family: Georgia, "Times New Roman", serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+.wrap {
+  transform: translateY(-90px);
+  width: 100%;
+  max-width: 800px;
+}
 
-    body {
-      margin: 0;
-      min-height: 100vh;
-      background: var(--cream);
-      color: var(--navy);
-      font-family: 'Inter', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      text-align: center;
-      padding: 36px 20px 24px;
-    }
+/* LOGO — bigger + higher */
+.logo {
+  width: 420px;
+  max-width: 85%;
+  margin-bottom: 70px;
+}
 
-    .wrap {
-      width: 100%;
-      max-width: 760px;
-    }
+/* SMALL GOLD TEXT */
+.eyebrow {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #C6A96B;
+  margin-bottom: 15px;
+}
 
-    .logo {
-      width: 260px;
-      max-width: 78%;
-      display: block;
-      margin: 0 auto 72px;
-    }
+/* MAIN TITLE */
+h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
 
-    .tagline {
-      font-size: 9px;
-      letter-spacing: 0.34em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 10px;
-    }
+/* CLEAN SHORT SUBTEXT */
+.subtext {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #3d4c5a;
+  margin-bottom: 26px;
+}
 
-    .headline {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(40px, 5vw, 58px);
-      line-height: 0.95;
-      font-weight: 500;
-      margin: 0;
-    }
+/* COMING SOON */
+.coming {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #C6A96B;
+}
 
-    .description {
-      max-width: 560px;
-      margin: 22px auto 0;
-      font-size: 14px;
-      line-height: 1.9;
-      color: var(--text);
-    }
+/* MOBILE */
+@media (max-width: 768px) {
+  .wrap {
+    transform: translateY(-40px);
+  }
 
-    .coming {
-      margin-top: 26px;
-      font-size: 9px;
-      letter-spacing: 0.34em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
+  .logo {
+    width: 300px;
+    margin-bottom: 50px;
+  }
 
-    @media (max-width: 640px) {
-      body {
-        padding: 26px 16px 20px;
-      }
-
-      .logo {
-        width: 210px;
-        margin-bottom: 54px;
-      }
-
-      .headline {
-        font-size: 34px;
-      }
-
-      .description {
-        font-size: 13px;
-      }
-    }
-  </style>
+  h1 {
+    font-size: 38px;
+  }
+}
+</style>
 </head>
+
 <body>
-  <main class="wrap">
-    <img src="2.png" class="logo" alt="ANAGATA logo">
 
-    <div class="tagline">a personal journal</div>
+<div class="wrap">
 
-    <h1 class="headline">
-      Somewhere Between<br>
-      Here and There
-    </h1>
+  <img src="2PNG.png" class="logo">
 
-    <p class="description">
-      a quiet space for travel, lifestyle, everyday rituals, and simple living,
-      shaped by movement, stillness, and the moments in between
-    </p>
+  <div class="eyebrow">A personal journal</div>
 
-    <div class="coming">Coming Soon</div>
-  </main>
+  <h1>
+    Somewhere Between<br>
+    Here and There
+  </h1>
+
+  <div class="subtext">
+    Travel, stillness, and the moments in between
+  </div>
+
+  <div class="coming">
+    Coming soon
+  </div>
+
+</div>
+
 </body>
 </html>

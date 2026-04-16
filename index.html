@@ -32,13 +32,14 @@
       text-align: center;
       padding: 40px 24px;
       letter-spacing: 0.01em;
+      overflow: hidden;
     }
 
     .page {
       width: 100%;
       max-width: 760px;
       animation: fadeIn 1.1s ease;
-      transform: translateY(-10px);
+      transform: translateY(-60px);
     }
 
     .nav {
@@ -67,7 +68,7 @@
       width: 420px;
       max-width: 88%;
       display: block;
-      margin: -18px auto 72px;
+      margin: -10px auto 72px;
     }
 
     .tagline {
@@ -84,7 +85,7 @@
       line-height: 1.05;
       font-weight: 500;
       letter-spacing: 0.02em;
-      margin-bottom: 18px;
+      margin: 0;
     }
 
     .divider {
@@ -123,15 +124,32 @@
       }
       to {
         opacity: 1;
-        transform: translateY(-10px);
+        transform: translateY(-60px);
       }
     }
 
     @media (max-width: 640px) {
+      body {
+        padding: 24px 18px;
+        overflow: auto;
+      }
+
+      .page {
+        transform: translateY(-20px);
+      }
+
       .nav {
         gap: 16px;
-        margin-bottom: 60px;
+        margin-bottom: 52px;
         flex-wrap: wrap;
+      }
+
+      .logo {
+        margin: -6px auto 48px;
+      }
+
+      .tagline {
+        margin-bottom: 18px;
       }
 
       .description {
@@ -140,14 +158,13 @@
       }
 
       .coming {
-        margin-top: 50px;
+        margin-top: 44px;
       }
     }
   </style>
 </head>
 <body>
   <main class="page">
-
     <nav class="nav">
       <a href="#">Home</a>
       <a href="#">Journal</a>
@@ -171,7 +188,6 @@
     </p>
 
     <div class="coming">Coming Soon</div>
-
   </main>
 </body>
 </html>

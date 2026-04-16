@@ -1,113 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ANAGATA</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Manrope:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --navy: #0F2A44;
+      --gold: #C6A96B;
+      --cream: #F7F3EE;
+      --text-soft: #44576c;
+      --line: rgba(15, 42, 68, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
       min-height: 100vh;
-      background: #F7F3EE;
+      background: var(--cream);
+      color: var(--navy);
+      font-family: 'Inter', sans-serif;
       display: flex;
-      justify-content: center;
       align-items: center;
-      font-family: 'Manrope', sans-serif;
-      color: #0F2A44;
+      justify-content: center;
       text-align: center;
+      padding: 40px 24px;
     }
 
-    .container {
-      max-width: 720px;
-      padding: 40px 24px;
-      transform: translateY(-20px);
-      animation: fadeUp 1.2s ease;
+    .page {
+      width: 100%;
+      max-width: 760px;
+      animation: fadeIn 1.1s ease;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 72px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--navy);
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      opacity: 0.82;
+      transition: opacity 0.25s ease, color 0.25s ease;
+    }
+
+    .nav a:hover {
+      color: var(--gold);
+      opacity: 1;
     }
 
     .logo {
-      width: 440px;
-      max-width: 90%;
+      width: 420px;
+      max-width: 88%;
       display: block;
-      margin: 0 auto 70px;
+      margin: 0 auto 56px;
     }
 
     .tagline {
-      font-size: 10px;
-      letter-spacing: 5px;
-      color: #C6A96B;
-      margin-bottom: 16px;
+      font-size: 11px;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 22px;
     }
 
     .headline {
-      font-family: 'Playfair Display', serif;
-      font-size: 40px;
-      letter-spacing: 2px;
-      margin-bottom: 24px;
-      color: #0F2A44;
+      font-family: 'EB Garamond', serif;
+      font-size: clamp(42px, 6vw, 64px);
+      line-height: 1.05;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin: 0;
     }
 
-    .line {
-      width: 50px;
+    .divider {
+      width: 56px;
       height: 1px;
-      background: #C6A96B;
-      margin: 28px auto;
+      background: var(--line);
+      margin: 34px auto 34px;
     }
 
     .description {
       max-width: 560px;
-      margin: 0 auto 44px;
+      margin: 0 auto;
       font-size: 14px;
-      line-height: 1.9;
-      color: #3a4a5a;
+      line-height: 2;
+      color: var(--text-soft);
     }
 
     .coming {
-      font-size: 10px;
-      letter-spacing: 6px;
-      color: #C6A96B;
-      transition: 0.3s;
+      margin-top: 48px;
+      font-size: 11px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold);
     }
 
-    .coming:hover {
-      letter-spacing: 9px;
-      opacity: 0.7;
-    }
-
-    @keyframes fadeUp {
+    @keyframes fadeIn {
       from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(24px);
       }
       to {
         opacity: 1;
-        transform: translateY(-20px);
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav {
+        gap: 16px;
+        margin-bottom: 56px;
+        flex-wrap: wrap;
+      }
+
+      .description {
+        font-size: 13px;
+        line-height: 1.9;
+      }
+
+      .coming {
+        margin-top: 40px;
       }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="./OLLA.png" class="logo" alt="ANAGATA logo">
+  <main class="page">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="journal.html">Journal</a>
+      <a href="about.html">About</a>
+    </nav>
 
-    <div class="tagline">a personal journal</div>
+    <img src="./OLLA.png" class="logo" alt="ANAGATA logo" />
 
-    <div class="headline">
-      SOMEWHERE BETWEEN<br>HERE AND THERE
-    </div>
+    <div class="tagline">A personal journal</div>
 
-    <div class="line"></div>
+    <h1 class="headline">
+      Somewhere Between<br />
+      Here and There
+    </h1>
 
-    <div class="description">
-      a quiet space shaped by movement and stillness,  
-      between flights and familiar routines, slow mornings and late arrivals,  
-      capturing the in between moments of travel, everyday life, and simple living
-    </div>
+    <div class="divider"></div>
 
-    <div class="coming">COMING SOON</div>
-  </div>
+    <p class="description">
+      A quiet space for travel, lifestyle, everyday rituals, and simple living,
+      shaped by movement, stillness, and the moments in between.
+    </p>
+
+    <div class="coming">Coming Soon</div>
+  </main>
 </body>
 </html>

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About — ANAGATA</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANAGATA</title>
+
+  <!-- Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -13,72 +16,100 @@
     }
 
     body {
+      min-height: 100vh;
       background: #F7F3EE;
       color: #0F2A44;
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: 'Montserrat', sans-serif;
       display: flex;
       justify-content: center;
-      padding: 60px 20px;
+      align-items: center;
+      text-align: center;
+      padding: 24px;
     }
 
     .wrap {
       max-width: 700px;
       width: 100%;
-      text-align: center;
     }
 
     .logo {
-      width: 300px;
+      width: 240px;
       max-width: 80%;
-      margin-bottom: 50px;
+      margin: 0 auto 45px auto;
+      display: block;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: #0F2A44;
+      margin-bottom: 16px;
+      font-weight: 400;
     }
 
     h1 {
-      font-size: 42px;
+      font-size: clamp(36px, 5.5vw, 64px);
+      line-height: 1.1;
       font-weight: 400;
       margin-bottom: 20px;
+      color: #0F2A44;
     }
 
-    .text {
-      font-family: Arial, sans-serif;
+    .subtext {
+      max-width: 520px;
+      margin: 0 auto 26px auto;
       font-size: 15px;
       line-height: 1.9;
-      color: #4A5968;
-      margin-bottom: 18px;
+      font-weight: 300;
+      color: #0F2A44;
     }
 
-    .divider {
-      margin: 40px auto;
-      width: 60px;
-      height: 1px;
-      background: #C6A96B;
-    }
-
-    .back {
-      font-family: Arial, sans-serif;
+    .coming {
       font-size: 11px;
-      letter-spacing: 4px;
+      letter-spacing: 5px;
       text-transform: uppercase;
-      color: #C6A96B;
+      color: #0F2A44;
+      margin-bottom: 28px;
+    }
+
+    .about {
+      display: inline-block;
+      font-size: 11px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #0F2A44;
       text-decoration: none;
+      border-bottom: 1px solid #0F2A44;
+      padding-bottom: 3px;
+      transition: opacity 0.2s ease;
+    }
+
+    .about:hover {
+      opacity: 0.6;
     }
 
     @media (max-width: 768px) {
-      body {
-        padding: 40px 20px;
+      .logo {
+        width: 190px;
+        margin-bottom: 32px;
       }
 
       h1 {
-        font-size: 32px;
+        font-size: 30px;
       }
 
-      .logo {
-        width: 220px;
-      }
-
-      .text {
+      .subtext {
         font-size: 14px;
-        line-height: 1.8;
+        max-width: 300px;
+      }
+
+      .eyebrow {
+        letter-spacing: 4px;
+      }
+
+      .coming {
+        letter-spacing: 4px;
       }
     }
   </style>
@@ -88,29 +119,22 @@
 
   <div class="wrap">
 
-    <img src="./anagata.png" class="logo" alt="ANAGATA">
+    <img src="./anagata.png" alt="ANAGATA" class="logo">
 
-    <h1>About</h1>
+    <div class="eyebrow">A personal journal</div>
 
-    <p class="text">
-      I created ANAGATA as a quiet space to document the way I move through the world.
-    </p>
+    <h1>
+      Somewhere Between<br>
+      Here and There
+    </h1>
 
-    <p class="text">
-      It’s not just about travel, but about the feeling of movement, the pauses in between, and the way everyday moments begin to hold meaning when you slow down enough to notice them.
-    </p>
+    <div class="subtext">
+      A quiet space for travel, lifestyle, and everyday rituals shaped by movement, stillness, and the moments in between
+    </div>
 
-    <p class="text">
-      I’m drawn to simplicity, to places that feel calm, and to experiences that don’t need to be loud to be remembered.
-    </p>
+    <div class="coming">Coming soon</div>
 
-    <p class="text">
-      This space is a reflection of that — a collection of thoughts, places, and moments shaped by movement, stillness, and simply living.
-    </p>
-
-    <div class="divider"></div>
-
-    <a href="index.html" class="back">Back</a>
+    <a href="about.html" class="about">About</a>
 
   </div>
 

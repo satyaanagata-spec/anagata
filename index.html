@@ -17,15 +17,33 @@
     }
 
     header {
-      padding: 40px 20px;
+      padding: 60px 20px 20px;
+    }
+
+    .logo {
+      display: inline-block;
+      border: 1px solid #c6a96b;
+      padding: 10px 22px;
+      font-size: 13px;
+      letter-spacing: 4px;
       font-weight: 600;
-      letter-spacing: 2px;
+      color: #0f2a44;
+    }
+
+    .section {
+      padding: 80px 20px;
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
       font-size: 48px;
-      margin: 20px 0;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin-bottom: 10px;
     }
 
     p {
@@ -35,16 +53,19 @@
       color: #5a6a78;
     }
 
-    .section {
-      padding: 80px 20px;
-    }
-
     .btn {
-      margin-top: 20px;
-      padding: 10px 20px;
+      margin-top: 25px;
+      padding: 12px 24px;
       border: 1px solid #0f2a44;
       background: transparent;
       cursor: pointer;
+      transition: 0.3s;
+      letter-spacing: 1px;
+    }
+
+    .btn:hover {
+      background: #0f2a44;
+      color: white;
     }
 
     footer {
@@ -57,7 +78,9 @@
 
 <body>
 
-<header>ANAGATA</header>
+<header>
+  <div class="logo">ANAGATA</div>
+</header>
 
 <section class="section">
   <h1>Somewhere Between Here and There</h1>

@@ -1,188 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ANAGATA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<title>ANAGATA</title>
 
-  <style>
-    :root {
-      --navy: #0F2A44;
-      --cream: #F7F3EE;
-      --gold: #C6A96B;
-      --text: #66707c;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+:root {
+  --navy: #0F2A44;
+  --cream: #F7F3EE;
+  --gold: #C6A96B;
+  --text: #66707c;
+}
 
-    body {
-      background: var(--cream);
-      color: var(--navy);
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
-      min-height: 100vh;
-      padding: 24px 20px 60px;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-    }
+body {
+  background: var(--cream);
+  color: var(--navy);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 24px 20px 60px;
+}
 
-    .logo-container {
-      margin-top: 30px;
-      margin-bottom: 34px;
-    }
+/* LOGO */
+.logo-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-    .logo-img {
-      display: block;
-      margin: 0 auto;
-      width: 430px;
-      max-width: 92%;
-      height: auto;
-    }
+.logo-img {
+  display: block;
+  margin: 0 auto;
+  width: 420px;
+  max-width: 92%;
+  height: auto;
+}
 
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 4rem;
-      font-weight: 500;
-      line-height: 1.08;
-      letter-spacing: -0.02em;
-      margin-bottom: 22px;
-    }
+/* HERO */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
 
-    .subtitle {
-      max-width: 680px;
-      margin: 0 auto;
-      font-size: 1.15rem;
-      line-height: 1.8;
-      color: var(--text);
-    }
+/* TEXT */
+.subtitle {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text);
+}
 
-    .about {
-      margin-top: 88px;
-    }
+/* ABOUT */
+.about {
+  margin-top: 80px;
+}
 
-    .about h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.1rem;
-      font-weight: 500;
-      margin-bottom: 18px;
-      color: var(--navy);
-    }
+.about h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
 
-    .about p {
-      max-width: 720px;
-      margin: 0 auto;
-      font-size: 1.08rem;
-      line-height: 1.8;
-      color: var(--text);
-    }
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text);
+}
 
-    .button {
-      margin-top: 52px;
-    }
+/* BUTTON */
+.button {
+  margin-top: 50px;
+}
 
-    .button a {
-      display: inline-block;
-      text-decoration: none;
-      color: var(--navy);
-      border: 1px solid var(--navy);
-      padding: 14px 28px;
-      font-size: 0.95rem;
-      letter-spacing: 0.02em;
-      transition: 0.25s ease;
-      background: transparent;
-    }
+.button a {
+  text-decoration: none;
+  border: 1px solid var(--navy);
+  padding: 12px 26px;
+  font-size: 0.95rem;
+  color: var(--navy);
+  transition: 0.3s;
+}
 
-    .button a:hover {
-      background: var(--navy);
-      color: var(--cream);
-    }
+.button a:hover {
+  background: var(--navy);
+  color: var(--cream);
+}
 
-    @media (max-width: 768px) {
-      body {
-        padding: 18px 16px 48px;
-      }
+/* MOBILE */
+@media (max-width: 768px) {
 
-      .logo-container {
-        margin-top: 18px;
-        margin-bottom: 26px;
-      }
+  .logo-img {
+    width: 260px;
+  }
 
-      .logo-img {
-        width: 280px;
-        max-width: 94%;
-      }
+  h1 {
+    font-size: 2.6rem;
+  }
 
-      h1 {
-        font-size: 2.7rem;
-        line-height: 1.12;
-        margin-bottom: 18px;
-      }
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
 
-      .subtitle {
-        font-size: 1rem;
-        line-height: 1.75;
-      }
+  .about {
+    margin-top: 60px;
+  }
 
-      .about {
-        margin-top: 64px;
-      }
-
-      .about h2 {
-        font-size: 1.75rem;
-        margin-bottom: 14px;
-      }
-
-      .about p {
-        font-size: 1rem;
-        line-height: 1.75;
-      }
-
-      .button {
-        margin-top: 40px;
-      }
-
-      .button a {
-        padding: 13px 24px;
-        font-size: 0.92rem;
-      }
-    }
-  </style>
+}
+</style>
 </head>
+
 <body>
-  <div class="container">
 
-    <div class="logo-container">
-      <img src="2.png" alt="ANAGATA" class="logo-img">
-    </div>
+<!-- LOGO -->
+<div class="logo-container">
+  <img src="logo.png" alt="ANAGATA logo" class="logo-img">
+</div>
 
-    <h1>Somewhere Between Here and There</h1>
+<!-- HERO -->
+<h1>Somewhere Between Here and There</h1>
 
-    <p class="subtitle">
-      a quiet space for travel, lifestyle, everyday rituals, and simple living
-      shaped by movement, stillness, and the moments in between
-    </p>
+<p class="subtitle">
+a quiet space for travel, lifestyle, everyday rituals, and simple living shaped by movement, stillness, and the moments in between
+</p>
 
-    <section class="about">
-      <h2>About</h2>
-      <p>
-        ANAGATA is a personal journal capturing slow travel, intentional living,
-        and the beauty of everyday moments.
-      </p>
-    </section>
+<!-- ABOUT -->
+<div class="about">
+  <h2>About</h2>
+  <p>
+    ANAGATA is a personal journal capturing slow travel, intentional living, and the beauty of everyday moments.
+  </p>
+</div>
 
-    <div class="button">
-      <a href="#">Follow the journey</a>
-    </div>
+<!-- BUTTON -->
+<div class="button">
+  <a href="#">Follow the journey</a>
+</div>
 
-  </div>
 </body>
 </html>

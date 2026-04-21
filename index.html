@@ -1,170 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ANAGATA</title>
+  <meta charset="UTF-8">
+  <title>ANAGATA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <!-- PREMIUM FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-<style>
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: #f5f1eb;
-  color: #0f2a44;
-  text-align: center;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-/* HEADER */
-header {
-  padding: 80px 20px 40px;
-}
+    body {
+      background-color: #F7F3EE;
+      color: #0F2A44;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+    }
 
-/* EXACT LOGO STYLE */
-.logo {
-  position: relative;
-  display: inline-block;
-  padding: 30px 60px;
-  font-size: 42px;
-  font-weight: 700;
-  letter-spacing: 6px;
-  color: #0b1a4a;
-}
+    /* LOGO BOX */
+    .logo-box {
+      display: inline-block;
+      border: 4px solid #C6A96B;
+      padding: 18px 70px;
+      margin-top: 80px;
+      position: relative;
+    }
 
-/* TOP LINE */
-.logo::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 6px;
-  background: #c6a96b;
-}
+    .logo-box::before,
+    .logo-box::after {
+      content: "";
+      position: absolute;
+      height: 4px;
+      width: 60px;
+      background: #F7F3EE;
+      bottom: -4px;
+    }
 
-/* LEFT SIDE */
-.logo::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 6px;
-  height: 100%;
-  background: #c6a96b;
-}
+    .logo-box::before {
+      left: 0;
+    }
 
-/* RIGHT SIDE (extra element) */
-.logo span::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 6px;
-  height: 100%;
-  background: #c6a96b;
-}
+    .logo-box::after {
+      right: 0;
+    }
 
-/* BOTTOM LEFT SHORT LINE */
-.logo span::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 60px;
-  height: 6px;
-  background: #c6a96b;
-}
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 700;
+      font-size: 44px;
+      letter-spacing: 10px;
+      color: #0F2A44;
+    }
 
-/* BOTTOM RIGHT SHORT LINE */
-.logo b::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 60px;
-  height: 6px;
-  background: #c6a96b;
-}
+    /* HERO */
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 52px;
+      margin-top: 80px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
 
-/* CONTENT */
-.section {
-  padding: 80px 20px;
-}
+    .subtext {
+      max-width: 600px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #6B7280;
+    }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-}
+    /* SECTION */
+    section {
+      margin-top: 100px;
+      padding: 0 20px;
+    }
 
-h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-}
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
 
-p {
-  max-width: 600px;
-  margin: auto;
-  line-height: 1.6;
-  color: #5a6a78;
-}
+    .about {
+      max-width: 500px;
+      margin: auto;
+      color: #6B7280;
+      line-height: 1.7;
+    }
 
-.btn {
-  margin-top: 20px;
-  padding: 12px 24px;
-  border: 1px solid #0f2a44;
-  background: transparent;
-  cursor: pointer;
-}
+    /* BUTTON */
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 28px;
+      border: 1px solid #0F2A44;
+      text-decoration: none;
+      color: #0F2A44;
+      transition: 0.3s ease;
+      font-size: 14px;
+    }
 
-.btn:hover {
-  background: #0f2a44;
-  color: white;
-}
+    .btn:hover {
+      background: #0F2A44;
+      color: white;
+    }
 
-footer {
-  padding: 40px;
-  font-size: 12px;
-  color: #888;
-}
-</style>
+    /* FOOTER */
+    footer {
+      margin-top: 120px;
+      margin-bottom: 40px;
+      font-size: 12px;
+      color: #9CA3AF;
+    }
+
+  </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">
-    ANAGATA
-    <span></span>
-    <b></b>
+  <!-- LOGO -->
+  <div class="logo-box">
+    <div class="logo">ANAGATA</div>
   </div>
-</header>
 
-<section class="section">
+  <!-- HERO -->
   <h1>Somewhere Between Here and There</h1>
-  <p>
-    a quiet space for travel, lifestyle, everyday rituals,
-    and simple living shaped by movement, stillness,
-    and the moments in between
+
+  <p class="subtext">
+    a quiet space for travel, lifestyle, everyday rituals, and simple living
+    shaped by movement, stillness, and the moments in between
   </p>
-</section>
 
-<section class="section">
-  <h2>About</h2>
-  <p>
-    ANAGATA is a personal journal capturing slow travel,
-    intentional living, and the beauty of everyday moments.
-  </p>
-</section>
+  <!-- ABOUT -->
+  <section>
+    <h2>About</h2>
+    <p class="about">
+      ANAGATA is a personal journal capturing slow travel,
+      intentional living, and the beauty of everyday moments.
+    </p>
+  </section>
 
-<section class="section">
-  <h2>Coming Soon</h2>
-  <button class="btn">Follow the journey</button>
-</section>
+  <!-- COMING SOON -->
+  <section>
+    <h2>Coming Soon</h2>
+    <a href="#" class="btn">Follow the journey</a>
+  </section>
 
-<footer>
-  © 2026 ANAGATA
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    © 2026 ANAGATA
+  </footer>
 
 </body>
 </html>

@@ -1,120 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ANAGATA</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
   <style>
-    :root {
-      --navy: #0F2A44;
-      --gold: #C6A96B;
-      --cream: #F7F3EE;
-      --text: #566775;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      min-height: 100vh;
-      background: var(--cream);
-      color: var(--navy);
-      font-family: 'Inter', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      font-family: 'Montserrat', sans-serif;
+      background: #f5f1eb;
+      color: #0f2a44;
       text-align: center;
-      padding: 24px 20px 20px; /* 👈 tighter top */
     }
 
-    .wrap {
-      width: 100%;
-      max-width: 700px;
+    header {
+      padding: 40px 20px;
+      font-weight: 600;
+      letter-spacing: 2px;
     }
 
-    .logo {
-      width: 220px; /* 👈 SMALLER = removes ugly box dominance */
-      max-width: 80%;
-      display: block;
-      margin: 0 auto 40px; /* 👈 higher */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      margin: 20px 0;
     }
 
-    .tagline {
-      font-size: 9px;
-      letter-spacing: 0.34em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 6px;
+    p {
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+      color: #5a6a78;
     }
 
-    .headline {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(42px, 5vw, 58px);
-      line-height: 0.95;
-      font-weight: 500;
-      margin: 0;
+    .section {
+      padding: 80px 20px;
     }
 
-    .description {
-      max-width: 520px;
-      margin: 18px auto 0;
-      font-size: 13.5px;
-      line-height: 1.8;
-      color: var(--text);
-    }
-
-    .coming {
+    .btn {
       margin-top: 20px;
-      font-size: 9px;
-      letter-spacing: 0.34em;
-      text-transform: uppercase;
-      color: var(--gold);
+      padding: 10px 20px;
+      border: 1px solid #0f2a44;
+      background: transparent;
+      cursor: pointer;
     }
 
-    @media (max-width: 640px) {
-      body {
-        padding: 18px 16px 16px;
-      }
-
-      .logo {
-        width: 180px;
-        margin-bottom: 28px;
-      }
-
-      .headline {
-        font-size: 34px;
-      }
-
-      .description {
-        font-size: 13px;
-      }
+    footer {
+      padding: 40px;
+      font-size: 12px;
+      color: #888;
     }
   </style>
 </head>
+
 <body>
-  <main class="wrap">
 
-    <img src="2.png" class="logo" alt="ANAGATA logo">
+<header>ANAGATA</header>
 
-    <div class="tagline">a personal journal</div>
+<section class="section">
+  <h1>Somewhere Between Here and There</h1>
+  <p>
+    a quiet space for travel, lifestyle, everyday rituals,
+    and simple living shaped by movement, stillness,
+    and the moments in between
+  </p>
+</section>
 
-    <h1 class="headline">
-      Somewhere Between<br>
-      Here and There
-    </h1>
+<section class="section">
+  <h2>About</h2>
+  <p>
+    ANAGATA is a personal journal capturing slow travel,
+    intentional living, and the beauty of everyday moments.
+  </p>
+</section>
 
-    <p class="description">
-      a quiet space for travel, lifestyle, everyday rituals, and simple living,
-      shaped by movement, stillness, and the moments in between
-    </p>
+<section class="section">
+  <h2>Coming Soon</h2>
+  <button class="btn">Follow the journey</button>
+</section>
 
-    <div class="coming">Coming Soon</div>
+<footer>
+  © 2026 ANAGATA
+</footer>
 
-  </main>
 </body>
 </html>

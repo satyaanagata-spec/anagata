@@ -12,47 +12,35 @@
 :root {
   --navy: #0F2A44;
   --cream: #F7F3EE;
-  --gold: #C6A96B;
   --text: #66707c;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
   background: var(--cream);
   color: var(--navy);
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 24px 20px 60px;
-}
-
-.logo-container {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 24px 20px 80px;
 }
 
 .logo-img {
-  display: block;
-  margin: 0 auto;
   width: 420px;
   max-width: 92%;
-  height: auto;
+  margin: 30px auto;
+  display:block;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
-  line-height: 1.1;
   margin-bottom: 20px;
 }
 
 .subtitle {
   max-width: 680px;
-  margin: 0 auto;
+  margin: auto;
   font-size: 1.1rem;
   line-height: 1.8;
   color: var(--text);
@@ -71,7 +59,6 @@ h1 {
 .about p {
   max-width: 700px;
   margin: auto;
-  font-size: 1.05rem;
   line-height: 1.8;
   color: var(--text);
 }
@@ -81,61 +68,37 @@ h1 {
 }
 
 .button a {
-  text-decoration: none;
   border: 1px solid var(--navy);
   padding: 12px 26px;
-  font-size: 0.95rem;
+  text-decoration: none;
   color: var(--navy);
-  transition: 0.3s;
 }
 
-.button a:hover {
-  background: var(--navy);
-  color: var(--cream);
+.qr {
+  margin-top: 35px;
 }
 
-/* QR */
-.qr-section {
-  margin-top: 40px;
-}
-
-.qr-text {
-  font-size: 0.8rem;
-  letter-spacing: 2px;
+.qr p {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
   color: var(--text);
+  margin-bottom: 10px;
 }
 
-.qr-img {
-  width: 130px;
-  margin-top: 10px;
+.qr img {
+  width: 160px;
 }
 
-@media (max-width: 768px) {
-  .logo-img {
-    width: 260px;
-  }
-
-  h1 {
-    font-size: 2.6rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-
-  .about {
-    margin-top: 60px;
-  }
+@media (max-width:768px){
+  h1 { font-size:2.6rem; }
+  .logo-img { width:260px; }
 }
 </style>
 </head>
 
 <body>
 
-<div class="logo-container">
-  <img src="logo.png" alt="ANAGATA logo" class="logo-img">
-</div>
+<img src="logo.png" class="logo-img">
 
 <h1>Somewhere Between Here and There</h1>
 
@@ -154,10 +117,9 @@ a quiet space for travel, lifestyle, everyday rituals, and simple living shaped 
   <a href="#">Follow the journey</a>
 </div>
 
-<!-- QR CODE -->
-<div class="qr-section">
-  <p class="qr-text">SCAN TO CONNECT</p>
-  <img src="qr.png.png" alt="QR code" class="qr-img">
+<div class="qr">
+  <p>SCAN TO CONNECT</p>
+  <img src="qr.png.png">
 </div>
 
 </body>

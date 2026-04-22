@@ -30,7 +30,6 @@ body {
   padding: 24px 20px 60px;
 }
 
-/* LOGO */
 .logo-container {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -44,7 +43,6 @@ body {
   height: auto;
 }
 
-/* HERO */
 h1 {
   font-family: 'Playfair Display', serif;
   font-size: 4rem;
@@ -52,7 +50,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-/* TEXT */
 .subtitle {
   max-width: 680px;
   margin: 0 auto;
@@ -61,7 +58,6 @@ h1 {
   color: var(--text);
 }
 
-/* ABOUT */
 .about {
   margin-top: 80px;
 }
@@ -80,7 +76,6 @@ h1 {
   color: var(--text);
 }
 
-/* BUTTON */
 .button {
   margin-top: 50px;
 }
@@ -99,9 +94,23 @@ h1 {
   color: var(--cream);
 }
 
-/* MOBILE */
-@media (max-width: 768px) {
+/* QR */
+.qr-section {
+  margin-top: 40px;
+}
 
+.qr-text {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: var(--text);
+}
+
+.qr-img {
+  width: 130px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
   .logo-img {
     width: 260px;
   }
@@ -118,26 +127,22 @@ h1 {
   .about {
     margin-top: 60px;
   }
-
 }
 </style>
 </head>
 
 <body>
 
-<!-- LOGO -->
 <div class="logo-container">
   <img src="logo.png" alt="ANAGATA logo" class="logo-img">
 </div>
 
-<!-- HERO -->
 <h1>Somewhere Between Here and There</h1>
 
 <p class="subtitle">
 a quiet space for travel, lifestyle, everyday rituals, and simple living shaped by movement, stillness, and the moments in between
 </p>
 
-<!-- ABOUT -->
 <div class="about">
   <h2>About</h2>
   <p>
@@ -145,9 +150,14 @@ a quiet space for travel, lifestyle, everyday rituals, and simple living shaped 
   </p>
 </div>
 
-<!-- BUTTON -->
 <div class="button">
   <a href="#">Follow the journey</a>
+</div>
+
+<!-- QR CODE -->
+<div class="qr-section">
+  <p class="qr-text">SCAN TO CONNECT</p>
+  <img src="qr.png.png" alt="QR code" class="qr-img">
 </div>
 
 </body>

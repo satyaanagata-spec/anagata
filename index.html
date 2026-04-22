@@ -22,7 +22,7 @@ body {
   color: var(--navy);
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 24px 20px 80px;
+  padding: 24px 20px 90px;
 }
 
 .logo-img {
@@ -72,9 +72,15 @@ h1 {
   padding: 12px 26px;
   text-decoration: none;
   color: var(--navy);
+  transition: 0.3s;
 }
 
-/* CLEAN QR */
+.button a:hover {
+  background: var(--navy);
+  color: var(--cream);
+}
+
+/* PREMIUM QR */
 .qr {
   margin-top: 40px;
 }
@@ -86,12 +92,24 @@ h1 {
   margin-bottom: 12px;
 }
 
+.qr a {
+  display: inline-block;
+  background: #ffffff;
+  padding: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.qr a:hover {
+  transform: scale(1.05);
+}
+
 .qr img {
   width: 160px;
   display: block;
-  margin: 0 auto;
 }
 
+/* MOBILE */
 @media (max-width:768px){
   h1 { font-size:2.6rem; }
   .logo-img { width:260px; }
@@ -122,7 +140,9 @@ a quiet space for travel, lifestyle, everyday rituals, and simple living shaped 
 
 <div class="qr">
   <p>SCAN TO CONNECT</p>
-  <img src="qr.png">
+  <a href="https://instagram.com/YOURUSERNAME" target="_blank">
+    <img src="qr.png">
+  </a>
 </div>
 
 </body>
